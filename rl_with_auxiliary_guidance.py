@@ -10,7 +10,7 @@ gym.register_envs(highway_env)
 
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyDiQsXdUrKrqOguAE_dTBMqzBjvv4ip0kc")
+genai.configure(api_key="API_KEY")
 gemini_model = genai.GenerativeModel("gemini-1.5-flash-002")
 LLM_PROMPT = """ You are to act as a reinforcement learning correction agent in a Highway RL environment to to facilitate the self-driving capablities of a vehicle.
 
